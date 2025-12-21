@@ -1,0 +1,11 @@
+.hidden {
+    display: none;
+}
+
+ 
+.option > * {
+    all: unset;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000EE;
+}
