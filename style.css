@@ -2,8 +2,7 @@
     display: none;
 }
 
- 
-.option > * {
+.options > * {
     all: unset;
     cursor: pointer;
     text-decoration: underline;

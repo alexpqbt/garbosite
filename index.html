@@ -10,34 +10,39 @@
 </head>
 
 <body>
-    <div class="dialog" data-index="0">
-        <p>...</p>
-        <div class="option">
-            <button class="option-1">hi</button>
-            <button class="option-2">...</button>
+    <div class="dialogs">
+        <div class="dialog start">
+            <p>...</p>
+            <div class="options">
+                <button data-next="why">hi</button>
+                <button data-next="leave">...</button>
+            </div>
         </div>
-    </div>
-
-    <div class="dialog hidden" data-index="1">
-        <p>why are you here?</p>
-        <div class="option">
-            <button class="option-1">just looking</button>
-            <button class="option-2">...</button>
+        <div class="dialog why hidden">
+            <p>why are you here?</p>
+            <div class="options">
+                <button data-next="mind">just looking</button>
+                <button data-next="leave">...</button>
+            </div>
         </div>
-    </div>
-
-    <div class="dialog hidden" data-index="2">
-        <p>... do you keep an open mind?</p>
-        <div class="option">
-            <button class="option-1">yes</button>
-            <button class="option-2">...</button>
+        <div class="dialog mind hidden">
+            <p>... do you keep an open mind?</p>
+            <div class="options">
+                <button data-next="visit">yes</button>
+                <button data-next="leave">...</button>
+            </div>
         </div>
-    </div>
-
-    <div class="dialog hidden" data-index="3">
-        <p>hmm aight then</p>
-        <div class="option">
-            <a href="" class="option-1">visit</a>
+        <div class="dialog visit hidden">
+            <p>hmm aight then</p>
+            <div class="options">
+                <a href="">visit</a>
+            </div>
+        </div>
+        <div class="dialog leave hidden">
+            <p>...</p>
+            <div class="options">
+                <button id="quit">...</button>
+            </div>
         </div>
     </div>
 </body>
