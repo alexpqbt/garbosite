@@ -1,9 +1,32 @@
-body, html {
-    margin: 0;
-    padding: 0;
+:root {
+    --black: #050505;
+    --white: #e4e4e4;
+    --pink: #ff10f0;
+}
+
+@font-face {
+    font-family: "Univers Regular";
+    src: url(./univers/UniversRegular.ttf);
+}
+
+@font-face {
+    font-family: "Univers Bold";
+    src: url(./univers/UniversBold.ttf);
+}
+
+@font-face {
+    font-family: "Univers Condensed Bold";
+    src: url(./univers/UniversCnBold.ttf);
+}
+
+@font-face {
+    font-family: "Univers Condensed";
+    src: url(./univers/UniversCnRg.ttf);
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -13,13 +36,64 @@ body {
     align-items: center;
 
     height: 100vh;
+
+    font-family: "Univers Condensed";
 }
 
 .container {
     width: 100%;
     max-width: 1280px;
-    aspect-ratio: 16 / 9;
     outline: 1px solid gray;
+
+    display: grid;
+    grid-template-columns: 488.916px 791.084px;
+    grid-template-areas: " links hero "
+                         " intro hero ";
+
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.highlight {
+    color: var(--pink);
+}
+
+.unwelcoming-msg {
+    grid-area: hero;
+    text-transform: uppercase;
+    font-family: "Univers Condensed Bold";
+    font-size: 193px;
+    line-height: 147px;
+    letter-spacing: -8px;
+}
+
+.small-intro {
+    grid-area: intro;
+    text-align: right;
+    font-size: 52px;
+    line-height: 43px;
+    letter-spacing: -2px;
+}
+
+.links {
+    grid-area: links;
+    list-style: none;
+    text-align: right;
+}
+
+.links li {
+    font-size: 30px;
+    letter-spacing: -2px;
+}
+
+.links li:hover {
+    color: var(--pink);
+    text-decoration: underline;
+}
+
+.links button {
+    all: unset;
+    cursor: pointer;
 }
 
 .hidden {
