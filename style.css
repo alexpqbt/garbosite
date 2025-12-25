@@ -45,6 +45,7 @@ body {
 }
 
 .container {
+    position: relative;
     width: 100%;
     max-width: 1280px;
     outline: 1px solid gray;
@@ -106,8 +107,8 @@ button {
 
 .short-about-me {
     position: absolute;
-    top: 161px;
-    right: 524px;
+    top: 24px;
+    right: 360px;
     width: 396px;
     background-color: var(--black);
     color: var(--white);
