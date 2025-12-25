@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      .options > * {
+        all: unset;
+        cursor: pointer;
+        text-decoration: underline;
+        color: #0000ee;
+      }
+    </style>
     <script src="script.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="dialogs">
-        <div class="dialog start">
-            <p>...</p>
-            <div class="options">
-                <button data-next="why">hi</button>
-                <button data-next="leave">...</button>
-            </div>
+      <div class="dialog start">
+        <p>...</p>
+        <div class="options">
+          <button data-next="why">hi</button>
+          <button data-next="leave">...</button>
         </div>
-        <div class="dialog why hidden">
-            <p>why are you here?</p>
-            <div class="options">
-                <button data-next="visit">just looking</button>
-                <button data-next="leave">...</button>
-            </div>
+      </div>
+      <div class="dialog why hidden">
+        <p>why are you here?</p>
+        <div class="options">
+          <button data-next="visit">just looking</button>
+          <button data-next="leave">...</button>
         </div>
-        <div class="dialog visit hidden">
-            <p>hmm aight then</p>
-            <div class="options">
-                <a href="/bahay">visit</a>
-            </div>
+      </div>
+      <div class="dialog visit hidden">
+        <p>hmm aight then</p>
+        <div class="options">
+            <button data-next="disclaimer">visit</button>
+            <button data-next="leave">...</button>
         </div>
-        <div class="dialog leave hidden">
-            <p>...</p>
-            <div class="options">
-                <button id="quit">...</button>
-            </div>
+      </div>
+      <div class="dialog disclaimer hidden">
+        <p>disclaimer: the page you will visit will contain profanity, cringe, and broken english</p>
+        <div class="options">
+            <a href="/bahay">proceed</a>
+            <button id="quit">...</button>
         </div>
+      </div>
+      <div class="dialog leave hidden">
+        <p>...</p>
+        <div class="options">
+          <button id="quit">...</button>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
