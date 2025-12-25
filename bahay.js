@@ -21,6 +21,10 @@ nav.addEventListener("click", (e) => {
   }
   if (button.id === "links") {
   }
+
+  if (button.id === "wip") {
+    toggleWindow(".wip");
+  }
 });
 
 windows.forEach((window) => {

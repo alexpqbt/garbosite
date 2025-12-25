@@ -22,8 +22,12 @@
         <li><button id="info">&gt;info</button></li>
         <li><button id="likes">&gt;likes</button></li>
         <li><button id="dislikes">&gt;dislikes</button></li>
-        <li><button id="notToDo">&gt;not to do</button></li>
-        <li><button id="links">&gt;links</button></li>
+        <li>
+          <button id="wip"><del>&gt;not to do</del></button>
+        </li>
+        <li>
+          <button id="wip"><del>&gt;links</del></button>
+        </li>
       </ul>
       <div class="short-about-me hidden window">
         <button id="close"><u>&gt;CLOSE</u></button>
@@ -80,7 +84,7 @@
       <div class="my-likes hidden window">
         <button id="close"><u>&gt;CLOSE</u></button>
         <ul>
-          <li>wired earphones with l-jack</li>
+          <li>wired earphones with angled jack</li>
           <li>my old, broken phone</li>
           <li>free time</li>
           <li>fixing and breaking my configs</li>
@@ -138,6 +142,13 @@
             You are trying to access a piece of me that is not willing to share
             at the moment.
           </p>
+        </div>
+      </div>
+      <div class="wip hidden window">
+        <button id="close"><u>&gt;CLOSE</u></button>
+        <div class="err">
+          <img src="./static/wip.gif" alt="drilling penguin" />
+          <p>im lazy atm</p>
         </div>
       </div>
     </div>

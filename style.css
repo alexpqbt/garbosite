@@ -86,6 +86,10 @@ body {
     letter-spacing: -2px;
 }
 
+.small-intro u:hover {
+    color: var(--pink);
+}
+
 .links {
     grid-area: links;
     text-align: right;
@@ -168,16 +172,30 @@ button {
     background-color: var(--white);
     color: var(--black);
     outline: 2px solid var(--black);
+}
+
+.err {
+    padding: 1em;
     font-family: monospace;
     text-align: center;
     font-weight: bold;
 }
 
-.err {
-    padding: 1em;
-}
-
 .err .err-code {
     margin-bottom: 1em;
     text-decoration: underline;
+}
+
+.wip {
+    background-color: var(--white);
+    color: var(--black);
+    outline: 2px solid var(--pink);
+    text-align: center;
+
+    top: 330px;
+    right: 600px;
+}
+
+.wip img {
+    width: 75px;
 }
