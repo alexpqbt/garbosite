@@ -126,8 +126,6 @@ button {
 }
 
 .short-about-me {
-    top: 24px;
-    right: 360px;
     width: 396px;
 
     background-color: var(--pink);
@@ -146,8 +144,6 @@ button {
 }
 
 .my-likes {
-    bottom: 54px;
-    right: 458px;
     width: 205px;
 
     background-color: var(--black);
@@ -167,8 +163,6 @@ button {
 
 .my-dislikes {
     width: 230px;
-    left: 405px;
-    bottom: 255px;
     background-color: var(--white);
     color: var(--black);
     outline: 2px solid var(--black);
@@ -191,9 +185,6 @@ button {
     color: var(--black);
     outline: 2px solid var(--pink);
     text-align: center;
-
-    top: 330px;
-    right: 600px;
 }
 
 .wip img {
