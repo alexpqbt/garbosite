@@ -9,6 +9,11 @@ nav.addEventListener("click", (e) => {
     const info = document.querySelector(".short-about-me");
     info.classList.toggle("hidden");
   }
+
+  if (button.id === "likes") {
+    const likes = document.querySelector(".my-likes");
+    likes.classList.toggle("hidden");
+  }
 });
 
 windows.forEach((window) => {

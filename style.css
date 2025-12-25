@@ -109,34 +109,50 @@ button {
 
 .window {
     position: absolute;
-    background-color: var(--pink);
-    color: var(--black);
-    outline: 2px solid var(--white);
     font-family: "Univers Condensed Bold";
+}
+
+.window button {
+    display: block;
+    margin-left: auto;
 }
 
 .short-about-me {
     top: 24px;
     right: 360px;
     width: 396px;
-}
 
-.short-about-me li {
-    list-style: circle;
-    margin-left: 1.5em;
-}
-
-.short-about-me a {
+    background-color: var(--pink);
     color: var(--black);
+    outline: 2px solid var(--white);
 }
 
-.short-about-me button {
-    display: block;
-    margin-left: auto;
+.window a {
+    color: inherit;
 }
 
 .red-flags,
 .green-flags {
     margin-top: 1em;
     font-family: "Univers Condensed";
+}
+
+.my-likes {
+    bottom: 54px;
+    right: 458px;
+    width: 205px;
+
+    background-color: var(--black);
+    color: var(--pink);
+    outline: 2px solid var(--pink);
+}
+
+.my-likes a {
+    color: inherit;
+}
+
+.my-likes .ps-note {
+    margin-top: 1em;
+    font-family: "Univers Condensed";
+    font-size: 12px;
 }
