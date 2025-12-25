@@ -48,7 +48,6 @@ body {
     position: relative;
     width: 100%;
     max-width: 1280px;
-    outline: 1px solid gray;
 
     display: grid;
     grid-template-columns: 488.916px 791.084px;
