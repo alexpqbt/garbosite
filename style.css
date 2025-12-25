@@ -108,9 +108,9 @@ button {
 
 .window {
     position: absolute;
-    background-color: var(--black);
-    color: var(--white);
-    outline: 4px solid var(--pink);
+    background-color: var(--pink);
+    color: var(--black);
+    outline: 2px solid var(--white);
     font-family: "Univers Condensed Bold";
 }
 
@@ -126,7 +126,7 @@ button {
 }
 
 .short-about-me a {
-    color: var(--pink);
+    color: var(--black);
 }
 
 .short-about-me button {
