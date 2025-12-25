@@ -43,7 +43,12 @@ body {
 
     font-family: "Univers Condensed";
 
-    background-color: var(--black);
+    background-image: url(./static/bg.gif);
+    background-repeat: no-repeat;
+    background-size: 135%;
+    background-position: center;
+    background-color: rgba(11, 0, 10, 0.87);
+    background-blend-mode: darken;
 }
 
 .container {
@@ -56,7 +61,7 @@ body {
     grid-template-areas: " links hero "
                          " intro hero ";
 
-    background-color: var(--black);
+    /* background-color: var(--black); */
     color: var(--white);
 }
 
