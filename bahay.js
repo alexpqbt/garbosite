@@ -41,14 +41,14 @@ windows.forEach((window) => {
 function toggleWindow(selector) {
   const [x, y] = randomPosition();
   const window = document.querySelector(selector);
-  window.style.top = x;
-  window.style.right = y;
+  window.style.top = y;
+  window.style.right = x;
   window.classList.toggle("hidden");
 }
 
 function randomPosition() {
-  x = `${Math.random() * 368}px`;
-  y = `${Math.random() * 762}px`;
+  x = `${Math.random() * 762}px`;
+  y = `${Math.random() * 368}px`;
 
   return [x, y];
 }
