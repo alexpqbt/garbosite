@@ -68,7 +68,7 @@ body {
     grid-area: hero;
     text-transform: uppercase;
     font-family: "Univers Condensed Bold";
-    font-size: 193px;
+    font-size: 214px;
     line-height: 147px;
     letter-spacing: -8px;
 }
@@ -84,6 +84,7 @@ body {
 .links {
     grid-area: links;
     text-align: right;
+    align-self: flex-end;
 }
 
 .links li {
