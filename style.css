@@ -92,8 +92,7 @@ body {
     letter-spacing: -2px;
 }
 
-.links li:hover,
-.short-about-me button:hover {
+.links li:hover {
     color: var(--pink);
     text-decoration: underline;
 }
@@ -155,4 +154,25 @@ button {
     margin-top: 1em;
     font-family: "Univers Condensed";
     font-size: 12px;
+}
+
+.my-dislikes {
+    width: 230px;
+    left: 405px;
+    bottom: 255px;
+    background-color: var(--white);
+    color: var(--black);
+    outline: 2px solid var(--black);
+    font-family: monospace;
+    text-align: center;
+    font-weight: bold;
+}
+
+.err {
+    padding: 1em;
+}
+
+.err .err-code {
+    margin-bottom: 1em;
+    text-decoration: underline;
 }

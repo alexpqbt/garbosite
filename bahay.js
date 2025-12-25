@@ -6,13 +6,20 @@ nav.addEventListener("click", (e) => {
   if (!button) return;
 
   if (button.id === "info") {
-    const info = document.querySelector(".short-about-me");
-    info.classList.toggle("hidden");
+    toggleWindow(".short-about-me");
   }
 
   if (button.id === "likes") {
-    const likes = document.querySelector(".my-likes");
-    likes.classList.toggle("hidden");
+    toggleWindow(".my-likes");
+  }
+
+  if (button.id === "dislikes") {
+    toggleWindow(".my-dislikes");
+  }
+
+  if (button.id === "notToDo") {
+  }
+  if (button.id === "links") {
   }
 });
 
@@ -26,3 +33,8 @@ windows.forEach((window) => {
     }
   });
 });
+
+function toggleWindow(selector) {
+  const window = document.querySelector(selector);
+  window.classList.toggle("hidden");
+}
