@@ -21,3 +21,7 @@ body {
     aspect-ratio: 16 / 9;
     outline: 1px solid gray;
 }
+
+.hidden {
+    display: none;
+}
