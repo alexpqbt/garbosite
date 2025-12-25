@@ -42,6 +42,8 @@ body {
     height: 100vh;
 
     font-family: "Univers Condensed";
+
+    background-color: var(--black);
 }
 
 .container {
@@ -104,15 +106,18 @@ button {
     display: none;
 }
 
-.short-about-me {
+.window {
     position: absolute;
-    top: 24px;
-    right: 360px;
-    width: 396px;
     background-color: var(--black);
     color: var(--white);
     outline: 4px solid var(--pink);
     font-family: "Univers Condensed Bold";
+}
+
+.short-about-me {
+    top: 24px;
+    right: 360px;
+    width: 396px;
 }
 
 .short-about-me li {
