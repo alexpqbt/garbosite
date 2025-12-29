@@ -49,6 +49,8 @@ body {
     background-position: center;
     background-color: rgba(11, 0, 10, 0.87);
     background-blend-mode: darken;
+
+    position: relative;
 }
 
 .container {
@@ -61,8 +63,8 @@ body {
     grid-template-areas: " links hero "
                          " intro hero ";
 
-    /* background-color: var(--black); */
     color: var(--white);
+    transform: rotate(0.1864deg);
 }
 
 .highlight {
@@ -158,7 +160,7 @@ button {
 .my-likes .ps-note {
     margin-top: 1em;
     font-family: "Univers Condensed";
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .my-dislikes {
@@ -200,4 +202,16 @@ button {
 
 .wip img {
     width: 75px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(static/texture.jpg);
+    mix-blend-mode: overlay;
+    pointer-events: none;
 }
