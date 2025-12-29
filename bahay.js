@@ -19,7 +19,8 @@ nav.addEventListener("click", (e) => {
 
   if (button.id === "notToDo") {
   }
-  if (button.id === "links") {
+  if (button.id === "other-shit") {
+    toggleWindow(".other-shit");
   }
 
   if (button.id === "wip") {

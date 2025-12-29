@@ -168,6 +168,17 @@ button {
     outline: 2px solid var(--black);
 }
 
+.other-shit {
+    background-color: var(--black);
+    outline: 2px solid var(--white);
+    width: 267px;
+    text-align: right;
+}
+
+.other-shit ul {
+    margin-top: 1em;
+}
+
 .err {
     padding: 1em;
     font-family: monospace;
